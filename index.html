@@ -3,61 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humble Medic - AI-Driven TCM Solutions</title>
+    <title>Humble Medic</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+        nav {
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
         }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+        nav ul li {
+            margin: 0 15px;
         }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        input[type="text"], input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #5cb85c;
+        nav ul li a {
             color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
         }
-        button:hover {
-            background-color: #4cae4c;
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 60px 20px;
+            margin-top: 50px;
+        }
+        #hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        #services, #about, #contact {
+            background-color: #e2e2e2;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            margin: 0 0 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Humble Medic</h1>
-        <p>Revolutionizing Traditional Chinese Medicine with AI-driven solutions.</p>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+
+<nav>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="hero">
+    <h1>Welcome to Humble Medic</h1>
+    <p>Your trusted partner in holistic health solutions.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of holistic medical services to help you achieve optimal health.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Humble Medic combines traditional Chinese medicine with modern AI technology to provide personalized health solutions.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@humblemedic.com | Phone: +123456789</p>
+</section>
+
 </body>
 </html>
